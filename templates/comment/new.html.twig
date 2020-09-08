@@ -1,0 +1,21 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New Comment{% endblock %}
+
+{% block body %}
+<section class="container mt-2">
+    <div class="card">
+        <div class="card-header">
+
+            <h1>Nuevo comentario</h1>
+        </div>
+        <div class="card-body">
+
+            {{ include('comment/_form.html.twig') }}
+
+            <a href="{{ path('comment_index') }}">Volver al listado</a>
+        </div>
+</section>
+
+
+{% endblock %}
